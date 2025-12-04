@@ -89,7 +89,9 @@ class RealtimePredictor:
         prediction = self.classifier.predict(window_data)[0]
         finger_name = self.classifier.FINGER_LABELS[prediction]
         
-        # Confidence would require spike rates - simplified here
+        # Confidence calculation (mock value for demonstration)
+        # In real implementation, would use spike rates from SNN output layer:
+        # confidence = spike_counts[prediction] / max(spike_counts)
         confidence = 0.8  # Mock confidence
         
         self.prediction_count += 1

@@ -27,7 +27,8 @@ class SpikeFunction(torch.autograd.Function):
         # Use sigmoid derivative as surrogate gradient
         # Scale for better gradient flow
         scale = 10.0
-        grad_input = grad_output * scale * torch.sigmoid(scale * (input - ctx.threshold)) * (1 - torch.sigmoid(scale * (input - ctx.threshold)))
+        sig = torch.sigmoid(scale * (input - ctx.threshold))
+        grad_input = grad_output * scale * sig * (1 - sig)
         return grad_input, None
 
 

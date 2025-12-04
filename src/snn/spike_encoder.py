@@ -47,8 +47,9 @@ class SpikeEncoder:
             spikes = np.random.rand(self.time_steps, n_features) < (sample * max_rate)
             spike_trains.append(spikes.astype(np.float32))
         
-        # Return tensor with gradient tracking enabled
-        return torch.tensor(np.array(spike_trains), dtype=torch.float32, requires_grad=False)
+        # Convert to tensor efficiently
+        spike_array = np.stack(spike_trains, axis=0)
+        return torch.from_numpy(spike_array).float()
     
     def latency_encoding(self, features: np.ndarray, max_latency: Optional[int] = None) -> torch.Tensor:
         """

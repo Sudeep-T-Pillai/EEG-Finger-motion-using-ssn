@@ -182,9 +182,6 @@ class SNNClassifier:
         spike_trains = spike_trains.to(self.device)
         labels = labels.to(self.device)
         
-        # Detach spike trains as they are inputs without gradients
-        spike_trains = spike_trains.detach()
-        
         self.optimizer.zero_grad()
         
         # Forward pass
