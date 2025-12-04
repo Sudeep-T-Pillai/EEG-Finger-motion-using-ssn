@@ -1,0 +1,82 @@
+# Default configuration for EEG Finger Motion Detection
+
+# Data Configuration
+data:
+  sampling_rate: 250  # Hz
+  n_channels: 64
+  n_timepoints: 500
+  n_classes: 5  # Number of fingers
+
+# Preprocessing Configuration
+preprocessing:
+  bandpass:
+    low_freq: 0.5  # Hz
+    high_freq: 50.0  # Hz
+    order: 5
+  notch:
+    freq: 50.0  # Hz (use 60.0 for North America)
+    quality: 30.0
+  normalization: 'zscore'  # Options: 'zscore', 'minmax', 'robust'
+
+# Feature Extraction Configuration
+features:
+  include_time: true
+  include_frequency: true
+  include_wavelet: false
+  
+  frequency_bands:
+    delta: [0.5, 4]
+    theta: [4, 8]
+    alpha: [8, 13]
+    beta: [13, 30]
+    gamma: [30, 50]
+
+# Spike Encoding Configuration
+spike_encoding:
+  method: 'rate'  # Options: 'rate', 'latency', 'temporal'
+  time_steps: 100
+  max_rate: 1.0
+
+# SNN Model Configuration
+snn:
+  hidden_sizes: [256, 128]
+  threshold: 1.0
+  decay: 0.9
+  learning_rate: 0.001
+
+# Training Configuration
+training:
+  n_epochs: 50
+  batch_size: 32
+  validation_split: 0.2
+  early_stopping:
+    enabled: true
+    patience: 10
+    min_delta: 0.001
+
+# Prosthetic Control Configuration
+prosthetic:
+  smoothing_window: 3
+  confidence_threshold: 0.6
+  movement_speed: 10.0  # degrees per second
+
+# Real-time Processing Configuration
+realtime:
+  window_size: 500  # samples
+  overlap: 250  # samples
+  update_rate: 10  # Hz
+
+# Paths
+paths:
+  data_dir: 'data/'
+  checkpoint_dir: 'checkpoints/'
+  results_dir: 'results/'
+  logs_dir: 'logs/'
+
+# Finger Labels
+finger_labels:
+  0: 'Thumb'
+  1: 'Index'
+  2: 'Middle'
+  3: 'Ring'
+  4: 'Pinky'
