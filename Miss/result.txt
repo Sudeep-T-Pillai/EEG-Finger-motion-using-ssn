@@ -1,0 +1,376 @@
+Thumb vs Rest
+Thumb trials: 6036
+Rest trials:  18291
+Balanced class counts: [6036 6036]
+Class distribution (original labels):
+  Class 0: 6036 samples
+  Class 1: 6036 samples
+
+===== TEST RESULTS =====
+Accuracy  : 70.23%
+Precision : 71.61%
+Recall    : 70.23%
+Avg inference time per sample: 3.610 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.58      0.66      1208
+           1       0.66      0.83      0.74      1207
+
+    accuracy                           0.70      2415
+   macro avg       0.72      0.70      0.70      2415
+weighted avg       0.72      0.70      0.70      2415
+
+######################################################
+######################################################
+
+Thumb and pinky
+===== TEST RESULTS =====
+Accuracy  : 74.71%
+Precision : 76.05%
+Recall    : 74.78%
+Avg inference time per sample: 3.588 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.70      0.86      0.77      1207
+           1       0.82      0.64      0.72      1221
+
+    accuracy                           0.75      2428
+   macro avg       0.76      0.75      0.74      2428
+weighted avg       0.76      0.75      0.74      2428
+
+#####################################################
+#####################################################
+
+Thumbs vs pinky vs index vs middle 
+===== TEST RESULTS =====
+Accuracy  : 78.09%
+Precision : 78.37%
+Recall    : 78.08%
+Avg inference time per sample: 2.015 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.69      0.71      0.70      1207
+           1       0.77      0.84      0.80      1216
+           2       0.84      0.77      0.80      1222
+           3       0.84      0.79      0.81      1221
+
+    accuracy                           0.78      4866
+   macro avg       0.78      0.78      0.78      4866
+weighted avg       0.78      0.78      0.78      4866
+
+#####################################################
+#####################################################
+
+Thumb vs index vs pinky
+Class distribution (original labels):
+  Class 1: 6036 samples
+  Class 2: 6079 samples
+  Class 4: 6102 samples
+
+===== TEST RESULTS =====
+Accuracy  : 78.24%
+Precision : 78.50%
+Recall    : 78.23%
+Avg inference time per sample: 3.321 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.78      0.76      1207
+           1       0.83      0.73      0.78      1216
+           2       0.78      0.84      0.81      1221
+
+    accuracy                           0.78      3644
+   macro avg       0.79      0.78      0.78      3644
+weighted avg       0.79      0.78      0.78      3644
+
+
+Version 2
+Class distribution (original labels):
+  Class 1: 6036 samples
+  Class 2: 6079 samples
+  Class 4: 6102 samples
+
+===== TEST RESULTS =====
+Accuracy  : 78.49%
+Precision : 78.90%
+Recall    : 78.47%
+Avg inference time per sample: 3.294 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.78      0.77      0.77      1207
+           1       0.83      0.70      0.76      1216
+           2       0.75      0.88      0.81      1221
+
+    accuracy                           0.78      3644
+   macro avg       0.79      0.78      0.78      3644
+weighted avg       0.79      0.78      0.78      3644
+
+#####################################################
+#####################################################
+
+Thumb vs middle vs pinky 
+Class distribution (original labels):
+  Class 1: 6036 samples
+  Class 3: 6110 samples
+  Class 4: 6102 samples
+
+===== TEST RESULTS =====
+Accuracy  : 81.67%
+Precision : 81.72%
+Recall    : 81.64%
+Avg inference time per sample: 3.333 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.74      0.78      1207
+           1       0.80      0.86      0.83      1222
+           2       0.84      0.85      0.84      1221
+
+    accuracy                           0.82      3650
+   macro avg       0.82      0.82      0.82      3650
+weighted avg       0.82      0.82      0.82      3650
+
+
+
+
+========================================================================
+========================================================================
+S03 RESULTS
+4 class 
+===== TEST RESULTS =====
+Accuracy  : 74.99%
+Precision : 74.98%
+Recall    : 74.96%
+Avg inference time per sample: 1.841 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.69      0.69      0.69      1023
+           1       0.78      0.75      0.77      1023
+           2       0.78      0.81      0.79      1050
+           3       0.75      0.75      0.75      1063
+
+    accuracy                           0.75      4159
+   macro avg       0.75      0.75      0.75      4159
+weighted avg       0.75      0.75      0.75      4159
+
+=======================================================
+Thumb vs Index
+===== TEST RESULTS =====
+Accuracy  : 83.88%
+Precision : 83.88%
+Recall    : 83.88%
+Avg inference time per sample: 1.789 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.84      0.84      1024
+           1       0.84      0.84      0.84      1023
+
+    accuracy                           0.84      2047
+   macro avg       0.84      0.84      0.84      2047
+weighted avg       0.84      0.84      0.84      2047
+=========================================================
+Thumb vs rest 
+Thumb trials: 5117
+Rest trials:  15675
+Balanced class counts: [5117 5117]
+Class distribution (original labels):
+  Class 0: 5117 samples
+  Class 1: 5117 samples
+
+===== TEST RESULTS =====
+Accuracy  : 70.98%
+Precision : 71.47%
+Recall    : 70.99%
+Avg inference time per sample: 1.789 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.63      0.69      1024
+           1       0.68      0.78      0.73      1023
+
+    accuracy                           0.71      2047
+   macro avg       0.71      0.71      0.71      2047
+weighted avg       0.71      0.71      0.71      2047
+
+=======================================================
+thumb vs pinky
+===== TEST RESULTS =====
+Accuracy  : 82.84%
+Precision : 83.23%
+Recall    : 82.73%
+Avg inference time per sample: 1.836 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.77      0.82      1023
+           1       0.80      0.88      0.84      1063
+
+    accuracy                           0.83      2086
+   macro avg       0.83      0.83      0.83      2086
+weighted avg       0.83      0.83      0.83      2086
+
+==========================================================
+thumb vs middle 
+===== TEST RESULTS =====
+Accuracy  : 87.12%
+Precision : 87.18%
+Recall    : 87.09%
+Avg inference time per sample: 1.742 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.85      0.87      1023
+           1       0.86      0.89      0.88      1050
+
+    accuracy                           0.87      2073
+   macro avg       0.87      0.87      0.87      2073
+weighted avg       0.87      0.87      0.87      2073
+
+=============================================================
+middle vs pinky
+===== TEST RESULTS =====
+Accuracy  : 69.37%
+Precision : 72.08%
+Recall    : 69.26%
+Avg inference time per sample: 1.787 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.52      0.63      1050
+           1       0.64      0.87      0.74      1062
+
+    accuracy                           0.69      2112
+   macro avg       0.72      0.69      0.68      2112
+weighted avg       0.72      0.69      0.68      2112
+
+=============================================================
+Middle vs Index 
+===== TEST RESULTS =====
+Accuracy  : 90.11%
+Precision : 90.11%
+Recall    : 90.11%
+Avg inference time per sample: 1.738 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.90      0.90      1023
+           1       0.90      0.90      0.90      1050
+
+    accuracy                           0.90      2073
+   macro avg       0.90      0.90      0.90      2073
+weighted avg       0.90      0.90      0.90      2073
+
+===========================================================
+thumb vs index vs pinky
+Class distribution (original labels):
+  Class 1: 5117 samples
+  Class 2: 5115 samples
+  Class 4: 5312 samples
+
+===== TEST RESULTS =====
+Accuracy  : 73.01%
+Precision : 73.03%
+Recall    : 73.01%
+Avg inference time per sample: 1.809 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.72      0.67      0.70      1023
+           1       0.72      0.79      0.75      1023
+           2       0.75      0.73      0.74      1063
+
+    accuracy                           0.73      3109
+   macro avg       0.73      0.73      0.73      3109
+weighted avg       0.73      0.73      0.73      3109
+
+==========================================================
+Thumb vs Index vs Middle 
+Class distribution (original labels):
+  Class 1: 5117 samples
+  Class 2: 5115 samples
+  Class 3: 5248 samples
+
+===== TEST RESULTS =====
+Accuracy  : 76.65%
+Precision : 76.72%
+Recall    : 76.63%
+Avg inference time per sample: 1.838 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.76      0.76      1023
+           1       0.79      0.75      0.77      1023
+           2       0.76      0.78      0.77      1050
+
+    accuracy                           0.77      3096
+   macro avg       0.77      0.77      0.77      3096
+weighted avg       0.77      0.77      0.77      3096
+
+==========================================================
+Index vs Middle vs pinky
+Class distribution (original labels):
+  Class 2: 5115 samples
+  Class 3: 5248 samples
+  Class 4: 5312 samples
+
+===== TEST RESULTS =====
+Accuracy  : 79.87%
+Precision : 79.92%
+Recall    : 79.88%
+Avg inference time per sample: 1.780 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.80      0.80      1023
+           1       0.79      0.83      0.81      1050
+           2       0.80      0.77      0.79      1062
+
+    accuracy                           0.80      3135
+   macro avg       0.80      0.80      0.80      3135
+weighted avg       0.80      0.80      0.80      3135
+
+=======================================================
+Thumb vs Middle vs pinky
+Class distribution (original labels):
+  Class 1: 5117 samples
+  Class 3: 5248 samples
+  Class 4: 5312 samples
+
+===== TEST RESULTS =====
+Accuracy  : 74.74%
+Precision : 74.82%
+Recall    : 74.75%
+Avg inference time per sample: 2.897 ms
+
+Per-class report:
+              precision    recall  f1-score   support
+
+           0       0.70      0.74      0.72      1023
+           1       0.78      0.79      0.78      1050
+           2       0.76      0.72      0.74      1063
+
+    accuracy                           0.75      3136
+   macro avg       0.75      0.75      0.75      3136
+weighted avg       0.75      0.75      0.75      3136
